@@ -6,6 +6,7 @@ import { ArticlesComponent } from './articles/articles.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
+import { BreakingNewsComponent } from './breaking-news/breaking-news.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { HeroComponent } from './hero/hero.component';
     ArticlesComponent,
     SidebarComponent,
     FooterComponent,
-    HeroComponent
+    HeroComponent,
+    BreakingNewsComponent
   ],
   imports: [
     BrowserModule
