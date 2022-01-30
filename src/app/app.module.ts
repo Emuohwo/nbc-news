@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticlesComponent,
-    SidebarComponent
+    SidebarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
