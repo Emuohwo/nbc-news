@@ -1,0 +1,133 @@
+footer {
+  background: #0E1E32;
+  margin-top: 2em;
+  padding: 3em 0;
+  color: #ffffff;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+}
+
+.main-footer-media-box {
+    display: flex;
+    max-width: 287px;
+    text-align: right;
+    align-items: center;
+    justify-content: end;
+}
+
+.main-footer-media-box a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.main-footer-media-box .fa {
+    font-size: 30px;
+}
+
+/* ==================================================================================== */
+/* LARGE DEVICE */
+@media screen and (min-width: 401px) {
+    .footer-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    
+    
+    .footer-left-wrapper {
+        text-align: center;
+        align-self: center;
+    }
+    
+    .copyright {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    
+    /* middle */
+    
+    .footer-middle-wrapper {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 31px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    
+    .footer-middle a {
+        color: #FFFFFF;
+        display: block;
+        
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 31px;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+    
+    }
+    
+    /* right */
+    
+    .footer-right {
+        align-self: flex-start;
+    }
+    
+    .main-footer-link-box {
+        display: flex;
+        max-width: 387px;
+    }
+    
+    .main-footer-link-box a {
+        color: #FFFFFF;
+        text-decoration: none;
+        margin: 8px;
+    }
+    
+    .main-footer-media-box {
+        display: flex;
+        max-width: 287px;
+        text-align: right;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .main-footer-media-box a {
+        color: #FFFFFF;
+        text-decoration: none;
+        margin: 8px;
+    }
+    
+    .main-footer-media-box .fa {
+        font-size: 30px;
+    }
+}
+
+/* MOBILE DEVICE */
+@media screen and (max-width: 400px) {
+    .copyright .md-show{display: none;}
+    .copyright .phone-show {
+        text-align: center;
+        border-top: 1px solid #FFFFFF;
+        padding: 1em;
+    }
+}

@@ -1,0 +1,127 @@
+.articles-sidebar-layout {
+    display: flex;
+    gap: 1em;
+}
+
+.sidebar {
+    flex: 1
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+    flex: 2;
+}
+
+/* ARTICLE */
+
+.article-wrapper {
+    width: 46%;
+    /* width: 438px; */
+    height: 520px;
+    left: 755px;
+    top: 844px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 2px 14px rgba(42, 42, 42, 0.24);
+    border-radius: 3px;
+}
+
+.article-content {
+    padding: 25px;
+}
+
+.article-img {
+    height: 210px;
+    width: 100%;
+    left: 714px;
+    top: 844px;
+    border-radius: 0px;
+    object-fit: cover;
+
+}
+
+.article-title {
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2A2A2A;
+    margin-bottom: 12px;
+}
+
+.article-desc {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.publishedAt-author-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2em;
+}
+
+.publishedAt {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 165%;
+
+color: #2A2A2A;
+
+}
+
+.article-author {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 165%;
+    color: #2A2A2A;
+    opacity: 0.7;
+}
+
+.view-more-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    opacity: 0.28;
+    border: 1px solid #C31815;
+    padding: 1em 2em;
+    border-radius: 2px;
+}
+
+.view-more {
+    /* width: 220px;
+    height: 60px;
+    left: 625px;
+    top: 1954px;
+
+    opacity: 0.28;
+    border: 1px solid #C31815;
+    border-radius: 2px; */
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #C31815;
+}
