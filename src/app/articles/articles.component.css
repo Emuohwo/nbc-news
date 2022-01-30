@@ -142,7 +142,8 @@ color: #2A2A2A;
         width: 100%;
     }
 
-    .view-more-wrapper {
-
+    .publishedAt-author-box {
+        font-size: 70%;
     }
+    
 }

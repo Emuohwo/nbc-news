@@ -3,6 +3,7 @@ footer {
   margin-top: 2em;
   padding: 3em 0;
   color: #ffffff;
+  overflow: hidden;
 }
 
 .footer-wrapper {
