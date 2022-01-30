@@ -1,27 +1,43 @@
 
-<h2>Articles</h2>
 <div class="container articles-sidebar-layout">
 
-    <div class="articles">
-        <div 
-          *ngFor="let article of articles"
-          class="article-wrapper"
-        >
-            <a href={{article.url}}>
-                <img *ngIf="article" class="article-img" src={{article.urlToImage}} alt="">
-            </a>
-            <div class="article-content">
-                <h6 class="article-title">{{article.title}}</h6>
-                <p class="article-desc">{{article.description}}</p>
+    <div class="article-column">
+        <div class="article-column">
+            <div class="articles-tabs-wrapper">
+                <div class="tab-content">
+                    <span class="tab-item">Latest Stories</span>
+                    <span class="tab-item">Think</span>
+                    <span class="tab-item">Health</span>
+                </div>
 
-                <div class="publishedAt-author-box">
-                    <span class="publishedAt">{{article.publishedAt | date}}</span>
-                    <span class="article-author">{{article.author}} | 4min read</span>
+                <div class="tab-icon">
+                    <img src="assets/icons/tab-switch.png" alt="">
+                </div>
+    
+            </div>
+            <div class="articles">
+                <div 
+                  *ngFor="let article of articles"
+                  class="article-wrapper"
+                >
+                    <a href={{article.url}}>
+                        <img *ngIf="article" class="article-img" src={{article.urlToImage}} alt="">
+                    </a>
+                    <div class="article-content">
+                        <h6 class="article-title">{{article.title}}</h6>
+                        <p class="article-desc">{{article.description}}</p>
+        
+                        <div class="publishedAt-author-box">
+                            <span class="publishedAt">{{article.publishedAt | date}}</span>
+                            <span class="article-author">{{article.author}} | 4min read</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="view-more-wrapper">
-            <a class="view-more" href="#">View More</a>
+            <div class="view-more-wrapper">
+                <a class="view-more" href="#">View More</a>
+            </div>
+
         </div>
     </div>
 
