@@ -109,3 +109,21 @@
 
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 769px) {
+    .sidebar-content {
+        position: relative;
+    }
+
+    .live-wrapper {
+        position: absolute;
+        left: 5%;
+    }
+    .live-detail-wrapper {
+        margin-bottom: 2em;
+    }
+
+    .location-news-wrapper {
+        display: none;
+    }
+}
