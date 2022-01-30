@@ -1,0 +1,39 @@
+
+<div class="container">
+    <div class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-left">
+                <img src={{article.urlToImage}} alt={{article.title}}>
+            </div>
+            <div class="hero-right">
+                <div class="hero-right-wrapper">
+                    <div class="trending-wrapper">
+                        <h2 class="trending">Trending</h2>
+                        <div class="trending-details">
+                            <span class="icon">
+                                <img src="assets/icons/heart-o.png" alt="">
+                            </span>
+                            <span class="icon">
+                                <img src="assets/icons/upload.png" alt="">
+                            </span>
+                            <span class="icon">
+                                <img src="assets/icons/bookmark-o.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <h3 class="article-title">{{article.title}}</h3>
+                    <div class="mobile-show">
+                        <img class="mobile-img" src={{article.urlToImage}} alt={{article.title}}>
+                    </div>
+                    <p class="article-desc">{{article.content}}</p>
+                    
+                    <div class="publishedAt-author-box">
+                        <span class="publishedAt">{{article.publishedAt | date}}</span>
+                        <span class="article-author">{{article.author}} | 4min read</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
