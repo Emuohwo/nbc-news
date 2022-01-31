@@ -21,7 +21,7 @@ Run `ng serve` to start the application on *localhost:4200*
 Replace `fakekey` in the */src/app/article.service.ts* with key from the [news api](https://newsapi.org/)
 
 
-Replace  `articles = ARTICLERESP.articles` with `articles:Article[] = []` and save all changes
+Replace  `articles = ARTICLERESP.articles` with `articles:Article[] = []` */app/articles/articles/component.ts* and save all changes
 
 ## Development server
 
