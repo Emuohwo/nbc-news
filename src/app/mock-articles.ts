@@ -1,4 +1,5 @@
-import { Article } from "./models/article";
+import { Article, ArticleResponse } from "./models/article";
+
 
 
 export const ARTICLES: Article[] = [
@@ -55,3 +56,9 @@ export const ARTICLES: Article[] = [
       "content": "Peloton's (NASDAQ:PTON) stock fell 25% on reports of halted production and potential layoffs. United (NASDAQ:UAL) and American Airlines (NASDAQ:AAL) express optimism about increased travel in the spr… [+37945 chars]"
     },
 ];
+
+
+export const ARTICLERESP: ArticleResponse = {
+  status: 'ok',
+  articles: ARTICLES
+}

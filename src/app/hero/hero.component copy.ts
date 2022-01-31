@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ARTICLES, ARTICLERESP } from '../mock-articles';
-import { Article, ArticleResponse } from '../models/article';
+// import { Article } from '../models/article';
 
 @Component({
   selector: 'app-hero',
@@ -9,7 +9,8 @@ import { Article, ArticleResponse } from '../models/article';
 })
 export class HeroComponent implements OnInit {
 
-  article:Article = ARTICLERESP.articles[0]
+  // article: Article = ARTICLES[0]
+  article = ARTICLERESP.articles[0]
 
   constructor() { }
 
