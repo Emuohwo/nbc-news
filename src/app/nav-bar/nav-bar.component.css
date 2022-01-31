@@ -4,11 +4,19 @@ header {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(28px);
     padding: 0.7em 0.2em;
+    box-shadow: -1px 2px 12px 0px rgba(92,90,90,0.61);
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
 }
 
 nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 2em;
 }
 
 .logo-box img {
@@ -17,12 +25,36 @@ nav {
 }
 
 .nav-middle {
+    flex: 1;
+}
+
+.nav-middle-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-right {
+    align-items: center;
     display: flex;
     align-items: center;
     gap: 1em;
-    margin-left: 2em;
 }
 
-@media screen and (max-width: 426px)  {
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 769px)  {
     .nav-middle {display: none;}
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+        gap: 1em;
+        /* box-shadow: 0px 2px 0px 0px rgba(92,90,90,0.61); */
+        /* -webkit-box-shadow: -1px 2px 19px 0px rgba(92,90,90,0.61);
+        -moz-box-shadow: -1px 2px 19px 0px rgba(92,90,90,0.61); */
+    }
 }

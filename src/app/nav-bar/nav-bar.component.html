@@ -8,13 +8,40 @@
                 <img src="assets/logo.png" alt="logo">
             </div>
             <div class="nav-middle">
-                <a href="#">Corona Update</a>
-                <a href="#">Politics</a>
-                <a href="#">Business</a>
-                <a href="#">Sport</a>
-                <a href="#">World</a>
+                <div class="nav-middle-wrapper">
+                    <a href="#">Corona Update</a>
+                    <a href="#">Politics</a>
+                    <a href="#">Business</a>
+                    <a href="#">Sport</a>
+                    <a href="#">World</a>
+                    <a href="#">Travel</a>
+                    <a href="#">Podcasts</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="#">
+                    <img src="assets/icons/account.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/icons/search.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/icons/menu.png" alt="" (click)="toggleMenu()">
+                </a>
             </div>
         </nav>
+        <div 
+            *ngIf="isOpen"
+            class="mobile-nav"
+        >
+            <a href="#">Corona Update</a>
+            <a href="#">Politics</a>
+            <a href="#">Business</a>
+            <a href="#">Sport</a>
+            <a href="#">World</a>
+            <a href="#">Travel</a>
+            <a href="#">Podcasts</a>
+        </div>
     </div>
 </header>
 
