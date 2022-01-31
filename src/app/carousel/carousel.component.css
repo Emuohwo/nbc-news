@@ -30,8 +30,23 @@ h3 {
 
 #carousel {
     background: #eeecec;
-    margin-top: 2em;
+    margin-top: 1em;
     height: 210px;
+}
+
+.editor-box {
+    margin-top: 2em;
+}
+
+.editor {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #2A2A2A;
 }
 
 .carouselItem {
@@ -39,6 +54,8 @@ h3 {
     display: flex;
     width: 50%;
 }
+
+.phone-carousel-desc {display: none;}
 
 .carouselItem-left img {
     max-width: 300px;
@@ -69,4 +86,26 @@ color: #2A2A2A;
 
 #carousel .slick-dots .slick-dots-bottom.slick-active {
     color: red !important;
+}
+
+@media screen and (max-width: 769px) {
+    .carouselItem-left {
+        position: relative;
+    }
+    .carousel-desc,
+    .carousel-title {
+        display: none;
+    }
+    .phone-carousel-desc {
+        display: block;
+        color: #ffffff;
+        position: absolute;
+        bottom: 5%;
+        padding: 4px;
+        font-family: 'IBM Plex Serif',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

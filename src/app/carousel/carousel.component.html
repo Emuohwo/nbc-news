@@ -1,10 +1,15 @@
 <div class="container">
+    <div class="editor-box">
+        <h4 class="editor">Editor’s Picks</h4>
+
+    </div>
     <div id="carousel">
         <nz-carousel [nzEffect]="effect">
             <div nz-carousel-content *ngFor="let article of articles">
                 <div class="carouselItem">
                     <div class="carouselItem-left">
                         <img src={{article.urlToImage}} alt={{article.title}}>
+                        <p class="phone-carousel-desc">{{article.title}}</p>
                     </div>
                     <div class="carouselItem-right">
                         <h2 class=" carousel-title">{{article.title}}</h2>
