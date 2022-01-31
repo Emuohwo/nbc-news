@@ -2,6 +2,27 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
+
+## How to run this project
+
+It is assume that you have [Node Js](https://nodejs.org/) on your local machine as well and project cloned.
+
+To install the Angular CLI, open a terminal window and run the following command: `npm install -g @angular/cli`
+
+Run `npm install` in the root of the application to install all the neccessary packaage.
+
+Run `ng serve` to start the application on *localhost:4200*
+
+**Note** The application data are statically used. To use the live API from [news api](https://newsapi.org/), get create an Api key fro the News Api. You can alternatively use my key for testing, which may not work effectively because of the limited api request limit.
+
+
+### How to use data from New API
+
+Replace `fakekey` in the */src/app/article.service.ts* with key from the [news api](https://newsapi.org/)
+
+
+Replace  `articles = ARTICLERESP.articles` with `articles:Article[] = []` and save all changes
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
