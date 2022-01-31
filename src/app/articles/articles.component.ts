@@ -25,8 +25,8 @@ export class ArticlesComponent implements OnInit {
       
   }
 
-  // articles: Article[] = ARTICLES;
-   articles:Article[] = [];
+  articles: Article[] = ARTICLES;
+  //  articles:Article[] = [];
 
 
 }

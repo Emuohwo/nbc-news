@@ -1,0 +1,72 @@
+/* [nz-carousel-content] {
+    text-align: center;
+    height: 100px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+}
+#containment {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#slideme {
+    display: flex;
+}
+
+h3 {
+    color: #fff;
+    margin-bottom: 0;
+    user-select: none;
+    background: red;
+    max-width: 50%;
+} */
+
+[nz-carousel-content] {
+    /* height: 100px; */
+    color: #fff;
+    overflow: hidden;
+}
+
+#carousel {
+    background: #eeecec;
+    margin-top: 2em;
+    height: 210px;
+}
+
+.carouselItem {
+    position: relative;
+    display: flex;
+    width: 50%;
+}
+
+.carouselItem-left img {
+    max-width: 300px;
+    height: 170px;
+}
+
+.carouselItem-right {
+    margin-left: 1em;
+}
+
+.carousel-title {
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2A2A2A;
+}
+
+.carousel-desc {
+font-family: 'Nunito Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 163.41%;
+color: #2A2A2A;
+}
+
+#carousel .slick-dots .slick-dots-bottom.slick-active {
+    color: red !important;
+}
