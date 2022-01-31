@@ -23,7 +23,7 @@ footer {
     max-width: 287px;
     text-align: right;
     align-items: center;
-    justify-content: end;
+    /* justify-content: end; */
 }
 
 .main-footer-media-box a {

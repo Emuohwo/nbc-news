@@ -1,0 +1,25 @@
+<div class="container">
+    <div id="carousel">
+        <nz-carousel [nzEffect]="effect">
+            <div nz-carousel-content *ngFor="let article of articles">
+                <div class="carouselItem">
+                    <div class="carouselItem-left">
+                        <img src={{article.urlToImage}} alt={{article.title}}>
+                    </div>
+                    <div class="carouselItem-right">
+                        <h2 class=" carousel-title">{{article.title}}</h2>
+                        <p class="carousel-desc">{{article.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </nz-carousel>
+    </div>
+</div>
+
+<!-- <div id="contentment">
+    <nz-carousel [nzEffect]="effect" id="slideme">
+        <div nz-carousel-content *ngFor="let index of array">
+            <h3>{{index}}</h3>
+        </div>
+    </nz-carousel>
+</div> -->
