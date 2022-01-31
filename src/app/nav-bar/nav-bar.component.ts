@@ -6,8 +6,10 @@ import { Component, OnInit  } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-  onLeftClick() {
-    console.log('onLeftClick');
+
+  isOpen:boolean = false;
+  toggleMenu() {
+    this.isOpen = !this.isOpen;
   }
 
   constructor() { }
