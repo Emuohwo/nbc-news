@@ -125,6 +125,9 @@ footer {
 /* ==================================================================================== */
 /* LARGE DEVICE */
 @media screen and (max-width: 756px) {
+    footer {
+        padding-bottom: 0.2em;
+    }
     .footer-wrapper {
         flex-wrap: wrap;
     }
